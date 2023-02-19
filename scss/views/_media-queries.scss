@@ -1,0 +1,250 @@
+/*Media quierie para mobile*/
+@media screen and (max-width: 768px) {
+    .main__tVSv{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "main__tVSv__V"
+                            "main__tVSv__Vp"
+                            "main__tVSv__V__img"
+                            "main__tVSv__VS"
+                            "main__tVSv__T"
+                            "main__tVSv__Tp"
+                            "main__tVSv__T__img";
+    }
+
+    .combo1 p{
+        font-size: 80%;
+    }
+
+    .combo2 p{
+        font-size: 80%;
+    }
+
+    .quienes-somos p{
+        font-size: 90%;
+    }
+
+    .main__tVSv{
+    
+        &__Tp{
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 80%;
+        }
+
+        &__Vp{
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 80%;
+        }
+
+        &__T{
+        font-size: 200%;
+        }
+
+        &__V{
+        font-size: 220%;
+        }
+
+        &__VS{
+        font-size: 500%;
+        background-image: linear-gradient(to top, white, black, white);
+        }
+
+        &__V__img{
+        border-radius: 50px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        height: auto;
+        }
+
+        &__T__img{
+        border-radius: 50px;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        height: auto;
+        }
+    
+    }
+
+    .footer{
+
+        &__horarios__titulo{
+        font-size: 120%;
+        }
+
+        &__horarios__detalle{
+            font-size: 75%;
+            padding: 2%;
+        }
+
+        &__ubicacion__titulo{
+            font-size: 120%;
+        }
+
+        &__ubicacion__direccion{
+            font-size: 75%;
+        }
+    
+    }
+
+    .main{
+
+        &__comolohacemos__texto__p{
+            font-size: 80%;
+        }
+
+        &__secreto__p{
+            font-size: 80%;
+        }
+
+        &__secreto__h2{
+            font-size: 190%;
+        }
+
+        &__h1{
+            font-size: 200%;
+        }
+
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "footer__horarios__titulo   footer__ubicacion__titulo  footer__ubicacion__titulo"
+                             "footer__horarios__detalle     footer__ubicacion__direccion     footer__ubicacion__mapa"
+                             "ig     wsp    fb";
+    }
+
+
+.opciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "hamb-trad hamb-trad"
+                        "hamb-trad__op1-h2 hamb-trad__op2-h2"
+                        "hamb-trad__op1-img hamb-trad__op2-img"
+                        "hamb-trad__op1-p hamb-trad__op2-p"
+                        "hamb-veg hamb-veg"
+                        "hamb-veg__op1-h2 hamb-veg__op2-h2"
+                        "hamb-veg__op1-img hamb-veg__op2-img"
+                        "hamb-veg__op1-p hamb-veg__op2-p";
+    background-color: black;
+}
+
+.tradVSveg1{
+    font-size: 100%;
+    display: none;
+}
+
+.tradVSveg2{
+    font-size: 100%;
+    display: none;
+}
+
+
+.hamb-trad{
+    font-size: 170%;
+}
+
+.hamb-veg{
+    font-size: 170%;
+}
+
+.opciones{
+    
+    p{
+    font-size: 80%;
+    }
+
+    img{
+    border-radius: 40px;
+    }
+}
+
+.form__pedir{
+    font-size: 130%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+}
+
+/*Media quierie para tablet*/
+@media (max-width: 1200px) and (min-width:768px){
+    .main__tVSv{
+        
+        &__T{
+            font-size: 200%;
+        }
+
+        &__V{
+            font-size: 220%;
+        }
+    }
+
+    .footer {
+
+        &__horarios__titulo{
+            font-size: 200%;
+        }
+
+        &__ubicacion__titulo{
+            font-size: 200%;
+        }
+
+        &__horarios__detalle{
+            font-size: 150%;
+        }
+        
+        &__ubicacion__direccion{
+            font-size: 150%;
+        }
+
+    }
+
+    .main__comolohacemos__texto__p{
+        font-size: 100%;
+    }
+
+    .main__secreto__p{
+        font-size: 100%;
+    }
+
+    .main__tVSv{
+        
+        &__Vp{
+            font-size: 100%;
+        }
+
+        &__Tp{
+            font-size: 100%;
+        }
+
+        &__V__img{
+            border-radius: 50px;
+        }
+
+        &__VS{
+            font-size: 500%;
+        }
+
+        &__T__img{
+            border-radius: 50px;
+        }
+        
+    }
+
+    .main__secreto__h2{
+        font-size: 190%;
+    }
+
+    .main__h1{
+        font-size: 200%;
+    }
+
+}

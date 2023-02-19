@@ -1,0 +1,135 @@
+.ig{
+    grid-area: ig;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-top: 10%;
+    margin: 0;
+}
+
+.fb{
+    grid-area: fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-top: 10%;
+    margin: 0;
+}
+
+.wsp{
+    grid-area: wsp;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-top: 10%;
+    margin: 0;
+}
+
+/*Mapa scss*/
+$redes: (
+    ig: #FD1D1D,
+    wsp: #25D366,
+    fb: #4267b2
+);
+
+/*Bucle para que recorra colores de redes*/
+@each $red_social, $color in $redes {
+    .#{$red_social} {
+        color: $color
+    }
+} 
+
+.div__footer{
+    height: 20px;
+    background-image: linear-gradient(to bottom, black, black, goldenrod, black, black);
+}
+
+.footer{
+    &__horarios{
+        &__titulo{
+            grid-area: footer__horarios__titulo;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 300%;
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            margin: 0;
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+        &__detalle{
+            grid-area: footer__horarios__detalle;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150%;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 2%;
+        }
+    }
+    &__ubicacion{
+        &__titulo{
+            grid-area: footer__ubicacion__titulo;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 300%;
+            font-family: 'Prompt', sans-serif;
+            color: white;
+            margin: 0;
+            padding-top: 40px;
+            padding-bottom: 10px;
+        }
+        &__direccion{
+            grid-area: footer__ubicacion__direccion;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 150%;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding-left: 5%;
+        }
+        &__mapa{
+            grid-area: footer__ubicacion__mapa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            margin: 0;
+            padding: 5%;
+        }
+    }
+}
